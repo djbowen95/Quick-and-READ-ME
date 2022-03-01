@@ -3,6 +3,27 @@ const fs = require("fs");
 
 console.log('Hello, Welcome to the Easy Read Me Generator!');
 
+const questions = [
+// Enter the project title
+
+// Description
+
+// Installation Instructions
+
+// Usage Information
+
+// Contribution Guidelines
+
+// Test Instructions
+
+// License (Choose from Options)
+
+// GitHub Username
+
+// Email Address
+]
+
+
 // Example taken from the inquirer documentation, with several prompt types.
 /*
 const questions = [
