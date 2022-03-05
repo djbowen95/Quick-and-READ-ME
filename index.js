@@ -1,13 +1,27 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-console.log('Hello, Welcome to the Easy Read Me Generator!');
+console.log("\n Hello, Welcome to the Easy Read Me Generator!\n");
+console.log("The application will ask you a series of prompts.");
+console.log("It will generate a markdown README file based on your answers.\n")
 
 const questions = [
+  // Question prompt for the project title; the type of the prompt is 'input'.
   {
     type: "input",
     name: "project title",
     message: "What is the title of your project?",
+  },
+  // Question prompt for the project description; the type of the prompt is 'input'.
+  {
+    type: "input",
+    name: "description",
+    message: "Please give a short description of your project."
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Please give a short description of your project."
   }
 ];
 
