@@ -49,7 +49,12 @@ const questions = [
     message: "Which license would you like to use for your project?",
     choices: ["first-choice", "second choice", "third choice!!!"]
   },
-
+  // Question prompt for github username.
+  {
+    type: "input",
+    name: "username",
+    message: "What is the GitHub username of the main contributor?",
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
