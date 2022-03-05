@@ -35,6 +35,12 @@ const questions = [
     type: "input",
     name: "contribution guidelines",
     message: "Please provide some guidelines for how others can contribute to the project.",
+  },
+  // Question prompt for test instructions, the type of prompt is 'input'.
+  {
+    type: "input",
+    name: "test",
+    message: "How can a user test your application functions correctly?",
   }
 ];
 
