@@ -34,7 +34,7 @@ const questions = [
   {
     type: "input",
     name: "contribution guidelines",
-    message: "Please provide some guidelines for how others can contribute to the project.",
+    message: "Please provide any guidelines you would like others to follow when contributing to the project.",
   },
   // Question prompt for test instructions, the type of prompt is 'input'.
   {
@@ -45,8 +45,7 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then((answers) => {
-  console.log(answers.installation)
-  //console.log(JSON.stringify(answers, null, '  '));
+  console.log(JSON.stringify(answers, null, '  '));
 });
 
 
