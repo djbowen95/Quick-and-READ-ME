@@ -41,13 +41,25 @@ const questions = [
     type: "input",
     name: "test",
     message: "How can a user test your application functions correctly?",
-  }
+  },
+  // Question prompt for licensing, the type of prompt is 'list'.
+  {
+    type: "list",
+    name: "license",
+    message: "Which license would you like to use for your project?",
+    choices: ["first-choice", "second choice", "third choice!!!"]
+  },
+
 ];
 
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, '  '));
 });
 
+// Make installation instructions and usage instructions a numbered list.
+// "Which of the following sections would you like to include in your READ ME."
+// More prompts for description.
+// Function to double check - "does this all look correct?", "what would you like to change?"
 
 // Contribution Guidelines
 
