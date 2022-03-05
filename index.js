@@ -53,8 +53,14 @@ const questions = [
   {
     type: "input",
     name: "username",
-    message: "What is the GitHub username of the main contributor?",
+    message: "What is the GitHub username of the lead contributor?",
   },
+  // Question prompt for user email address.
+  {
+    type: "input",
+    name: "email",
+    message: "What email address can be used to contact the lead contributor?"
+  }
 ];
 
 inquirer.prompt(questions).then((answers) => {
