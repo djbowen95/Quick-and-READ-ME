@@ -30,20 +30,19 @@ const questions = [
     name: "usage",
     message: "Provide instructions for how a user would use your project:",
   },
-  
+  // Question prompt for contribution guidelines, the type of prompt is 'input'.
+  {
+    type: "input",
+    name: "contribution guidelines",
+    message: "Please provide some guidelines for how others can contribute to the project.",
+  }
 ];
 
 inquirer.prompt(questions).then((answers) => {
   console.log(answers.installation)
   //console.log(JSON.stringify(answers, null, '  '));
 });
-// Enter the project title
 
-// Description
-
-// Installation Instructions
-
-// Usage Information
 
 // Contribution Guidelines
 
