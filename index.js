@@ -4,6 +4,16 @@ const fs = require("fs");
 console.log('Hello, Welcome to the Easy Read Me Generator!');
 
 const questions = [
+  {
+    type: "input",
+    name: "project title",
+    message: "What is the title of your project?",
+  }
+];
+
+inquirer.prompt(questions).then((answers) => {
+  console.log(JSON.stringify(answers, null, '  '));
+});
 // Enter the project title
 
 // Description
@@ -21,7 +31,6 @@ const questions = [
 // GitHub Username
 
 // Email Address
-]
 
 
 // Example taken from the inquirer documentation, with several prompt types.
