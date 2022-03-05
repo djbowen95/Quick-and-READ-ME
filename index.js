@@ -18,11 +18,13 @@ const questions = [
     name: "description",
     message: "Please give a short description of your project."
   },
+  // Question prompt for installation instructions; the type of prompt is 'input'.
   {
     type: "input",
-    name: "description",
-    message: "Please give a short description of your project."
-  }
+    name: "installation",
+    message: "How would a user install your application?"
+  },
+
 ];
 
 inquirer.prompt(questions).then((answers) => {
