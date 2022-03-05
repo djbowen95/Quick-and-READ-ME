@@ -24,11 +24,18 @@ const questions = [
     name: "installation",
     message: "How would a user install your application?"
   },
-
+  // Question prompt for usage information; the type of prompt is 'input.
+  {
+    type: "input",
+    name: "usage",
+    message: "Provide instructions for how a user would use your project:",
+  },
+  
 ];
 
 inquirer.prompt(questions).then((answers) => {
-  console.log(JSON.stringify(answers, null, '  '));
+  console.log(answers.installation)
+  //console.log(JSON.stringify(answers, null, '  '));
 });
 // Enter the project title
 
