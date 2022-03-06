@@ -2,7 +2,7 @@ const questions = [
     // Question prompt for the project title; the type of the prompt is 'input'.
     {
       type: "input",
-      name: "project title",
+      name: "title",
       message: "What is the title of your project?",
     },
     // Question prompt for the project description; the type of the prompt is 'input'.
@@ -26,7 +26,7 @@ const questions = [
     // Question prompt for contribution guidelines, the type of prompt is 'input'.
     {
       type: "input",
-      name: "contribution guidelines",
+      name: "contribution",
       message:
         "Please provide any guidelines you would like others to follow when contributing to the project.",
     },
@@ -41,12 +41,12 @@ const questions = [
       type: "list",
       name: "license",
       message: "Which license would you like to use for your project?",
-      choices: ["first-choice", "second choice", "third choice!!!"],
+      choices: ["MIT", "GNU", "Apache 2.0", "ISC", "None"],
     },
     // Question prompt for github username.
     {
       type: "input",
-      name: "username",
+      name: "github",
       message: "What is the GitHub username of the lead contributor?",
     },
     // Question prompt for user email address.

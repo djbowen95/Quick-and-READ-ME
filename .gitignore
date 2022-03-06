@@ -2,10 +2,11 @@
 node_modules/
 
 # Folder to contain all generated READ ME files - should be empty
-generated-readme/
+# Currently is required for program to run correctly - would like to change this.
+# generated-readme/
 
-# Notepad file for sandboxing, do not need in repository.
-example-answers.js
+# Sandbox folder, used for storing notes and test files
+sandbox/
 
 # Project brief - description file that is not needed in the repo.
 homework-userstory.md

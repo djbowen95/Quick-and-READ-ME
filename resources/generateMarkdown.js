@@ -29,40 +29,40 @@ function renderLicenseSection(license) {
 
 // Template for the markdown file - fills in gaps with 'data' from user input.
 function generateMarkdown(data) {
-    return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
+    return `
+# ${data.title}
+${renderLicenseBadge(data.license)}
     
-    ## Description
-    ${data.description}
-  
-    ## Table of Contents
+## Description
+${data.description}
     
-    * [Installation](#installation)
-    * [Usage](#usage)
-    ${renderLicenseLink(data.license)}
-    * [Contribution](#contribution)
-    * [Tests](#tests)
-    * [Questions](#questions)
-  
-    ## Installation
-    ${data.installation}
-  
-    ## Usage
-    ${data.usage}
-  
-    ${renderLicenseSection(data.license)}
-  
-    ## Contribution
-    ${data.contribution}
-  
-    ## Tests
-    ${data.test}
-  
-    ## Questions
-    If you have any questions about this project, please contact me at:
-    Email: ${data.email}
-    GitHub: [${data.github}](https://github.com/${data.github})
-  `;
+## Table of Contents
+    
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
+* [Contribution](#contribution)
+* [Tests](#tests)
+* [Questions](#questions)
+    
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+${renderLicenseSection(data.license)}
+    
+## Contribution
+${data.contribution}
+
+## Tests
+${data.test}
+
+## Questions
+If you have any questions about this project, please contact me at:  
+Email: ${data.email}  
+GitHub: [${data.github}](https://github.com/${data.github})  `;
   }
   
   module.exports = generateMarkdown;
