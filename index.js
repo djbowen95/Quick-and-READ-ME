@@ -15,5 +15,13 @@ function writeToFile(fileName, data) {
   fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
+function begin() {
+  // Run through questions in terminal then return user input as an object.
+  inquirer.prompt(questions).then((answers) => { // Waits for question responses THEN passes the answers through a function. 
+      writeToFile("generated-readme/README.md", generateMarkdown({...answers})); // Generates read me file with answers, writes a markdown file to the path ./generated-readme/README.md.  
+      // Spread used for answers so that each time the program runs, the README file is written.
+  })
+}
+
 // Initiate the program.
 begin();
