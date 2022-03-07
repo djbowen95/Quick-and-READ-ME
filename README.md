@@ -2,6 +2,15 @@
 # Read Me Generator!
 ## Description
 This is an application which generates a professional README markdown file, based on user input. It can be run from the terminal, and asks the user a series of prompts, in order to quickly create a high quality file that contains all the essential information about a project. It is built with node.js and the inquirer package.
+
+## Demo Video and Sample
+The application can be seen in use here:  
+https://youtu.be/Y6WrL1kr5qs
+
+A sample READ ME can be found at:
+```
+ ./generated-readme/README-sample.md
+```
     
 ## Table of Contents
     
