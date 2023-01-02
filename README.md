@@ -1,7 +1,6 @@
-
-# Read Me Generator!
-## Description
-This is an application which generates a professional README markdown file, based on user input. It can be run from the terminal, and asks the user a series of prompts, in order to quickly create a high quality file that contains all the essential information about a project. It is built with node.js and the inquirer package.
+<h1 align="center"> 🏃 Quick and READ ME! 📝</h1>
+<h2 align="center"> Command-Line README Generator. <i> Version 1.0 </i> </h2>
+<p><strong>Quick and READ ME!</strong> is an easy-to-use, command-line interface that helps a user to quickly create a professional README markdown file. Created in <em>Node.js</em> with the <em>Inquirer npm package</em>, it can be run on a local machine from the command line. It will invite a user to answer a series of question prompts about their current project, and generate a simple README file based on their input. The user is then free to copy across to their own project's repository. </p>
 
 ## Demo Video and Sample
 The application can be seen in use here:  
