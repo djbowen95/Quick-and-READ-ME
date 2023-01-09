@@ -10,3 +10,6 @@ sandbox/
 
 # Project brief - description file that is not needed in the repo.
 homework-userstory.md
+
+# For now I don't want these pushed - but probably want repo to contain a blank folder for them
+generated-readme/
