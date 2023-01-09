@@ -65,8 +65,8 @@ GitHub: [djbowen95](https://github.com/djbowen95)
 ## Development
 Some of the ways I would like to build on this project in future:  
 1. Use more prompts to generate a better / more descriptive description section.
-2. Ask user which of the following prompts they would like to include in the READ ME, using the inquirer checklist function.
-3. Make the installation instructions and usage instructions a numbered list, either by asking the user to number instructions or asking them to input instructions one-by-one.
-4. Add a 'future development' set of prompts.
-5. Function to double check answers - ie. "Does this all look correct?" "What would you like to change?"
-6. Generate tests using TDD for this application. 
+2. Ask user which of the following prompts they would like to include in the READ ME, using the inquirer checklist function. #KEY DEVELOPMENT 1
+3. Make the installation instructions and usage instructions a numbered list, either by asking the user to number instructions or asking them to input instructions one-by-one. (GUIDED - FREEHAND)
+4. Add a 'future development' set of prompts. 
+5. Function to double check answers - ie. "Does this all look correct?" "What would you like to change?" #KEY DEVELOPMENT 2
+6. Generate tests using TDD for this application. #KEY DEVELOPMENT 3 (this might be "2.0").
