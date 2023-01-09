@@ -17,7 +17,16 @@ function writeToFile(fileName, data) {
 
 function begin() {
   // Run through questions in terminal then return user input as an object.
+  // Have inquirer run checklist / prompt user with checklist first.
+  // NEW CODE HERE.
+
+  // Pass results through the current questions prompt so only required questions are asked.
+  // NEW CODE HERE.
+
   inquirer.prompt(questions).then((answers) => { // Waits for question responses THEN passes the answers through a function. 
+      // Return a file that only features required sections.  
+      // NEW CODE MAYBE? 
+
       writeToFile("generated-readme/README.md", generateMarkdown({...answers})); // Generates read me file with answers, writes a markdown file to the path ./generated-readme/README.md.  
       // Spread used for answers so that each time the program runs, the README file is written.
   })
