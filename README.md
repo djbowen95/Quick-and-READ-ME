@@ -70,3 +70,9 @@ Some of the ways I would like to build on this project in future:
 4. Add a 'future development' set of prompts. 
 5. Function to double check answers - ie. "Does this all look correct?" "What would you like to change?" #KEY DEVELOPMENT 2
 6. Generate tests using TDD for this application. #KEY DEVELOPMENT 3 (this might be "2.0").
+
+7. Some support for version history
+8. Take an existing README and break it down
+9. Save all READMEs locally and create a custom path for where to save them
+9. Generate badges for the repository (automatically?)
+10. Let program user generate personal header or contact details section
