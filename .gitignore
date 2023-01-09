@@ -10,3 +10,6 @@ sandbox/
 
 # Project brief - description file that is not needed in the repo.
 homework-userstory.md
+
+# Generated README files
+generated-readme/
