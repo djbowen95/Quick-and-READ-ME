@@ -7,15 +7,19 @@
     
 * [01. About](#about)
 * * [01A. Project History](#project-history)
-* * [01B. Example Output](#example-output)
+* * [01B. Sample README](#sample-readme)
 * [02. Key Features](#key-features)
-* * [02A-E Key Feature A - E](#key-feature-a)
+* * [02A. My First Node Project](#my-first-node-project)
+* * [02B. Working with npm Packages](#working-with-npm-packages)
+* * [02C. Modularization](#modularization)
+* * [02D. Brand New Tools](#brand-new-tools)
 * [03. Installation](#installation)
 * * [03A. Prerequisites](#prerequisities)
 * * [03B. Cloning the Repository](#cloning-the-repository)
-* * [03C. Running the Project Locally](#running-the-project-locally)
+* * [03C. Running Quick and README](#running-quick-and-readme)
 * [04. Usage](#usage)
-* * [04A-E. Key Usage Features](#key-usage-a)
+* * [04A. Creating Your README File](#creating-your-readme-file)
+* * [04B. Saving Your README File](#saving-your-readme-file)
 * [05. Testing](#testing)
 * [06. Version History](#version-history)
 * [07. License](#license)
@@ -27,18 +31,19 @@
 ## About
 ### Project History
 ### Demonstration Video
-### Example Output
-## Demo Video and Sample
 The application can be seen in use here:  
 https://drive.google.com/file/d/1X9gVfdiT6SPgdSwwy0LVtYSUOOUI0eLx/view?usp=sharing
 [Should at least upload this to YouTube]
-
-A sample READ ME can be found at:
+### Sample README
+If you would like to look at an example of the style of markdown file the application can produce, one can be found at:
 ```
  ./generated-readme/README-sample.md
 ```
 ## Key Features
-### Key Feature A
+### My First Node Project
+### Working with npm Packages
+### Modularization
+### Brand New Tools
 JS features - Template literals, Arrow functions, functional loops (map/filter especially), node (process / argument), fs read/write the file system, modularization, npm and inquirer, object orientated programing, constructors etc, test driven development (?), promises (this stuff might be worth actually leaving for the next project unless I build these features!)
 Node -> Modularization -> NPM and Inquirer -> More JS with Node (?) (Maybe just the three, but add OOP and TDD later)
 Node process, argv -> modularization -> npm packages / inquirer -> more complex javascript? functional loops, iterators, template literals, etc. -> fs read/write (can i fit that into node or npm)
@@ -47,7 +52,7 @@ Node process, argv -> modularization -> npm packages / inquirer -> more complex 
 Node - download. Version used. File browser, explorer, some way to explore the file system (vs code).
 ### Cloning the Repository
 Make sure you install the packages / inquirer - dependency. Version (older). 
-### Running the Project Locally
+### Running Quick and README
 npm start
 To install:  
 1.  Create a local clone of the most recent version of the repository from GitHub. This should store all the necessary files on your local machine.  
@@ -79,7 +84,10 @@ Saving your file as a section.
 You can always customise your file afterwards. 
 
 ## Testing
-No tests - want to build - link to relevant project. 
+This project was not built with any unit tests.
+
+I built a similar application the following week of the Coding Bootcamp course, the [Team Profile Builder](https://github.com/djbowen95/Team-Profile-Builder). This project does have a full set of unit tests, built in Jest. Please take a look at it if you would like to see an example of my work building unit tests.
+
 ## Version History
 ### Version 1.1.0
 Improved README (this READ ME).
