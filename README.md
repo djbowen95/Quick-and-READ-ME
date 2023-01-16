@@ -30,6 +30,11 @@
 
 ## About
 ### Project History
+This project was first built as a weekly assignment for the University of Birmingham and 2U/Trilogy Coding Bootcamp. The project was built for Week 9 of the program, which is the week we were introduced to Node.js and the core concepts which underpin back-end development. We were introduced to npm and several basic node packages, including fs and inquirer, as well as some JavaScript features that were not supported in the front-end projects we had built at this point, notably modularization.
+
+This challenge of this project was to build a command-line client from scratch that demonstrated our understanding of Node.js and the node package manager. You can view the full project brief, which I have included in the documentation folder, [here](./documenation/brief.md).
+
+While I've built far more complex applications since building this project, I've chosen to pin this to one to my GitHub profile because I think its a really good example of the core understanding of Node.js programming (elaborate).
 ### Demonstration Video
 The application can be seen in use here:  
 https://drive.google.com/file/d/1X9gVfdiT6SPgdSwwy0LVtYSUOOUI0eLx/view?usp=sharing
@@ -47,6 +52,7 @@ If you would like to look at an example of the style of markdown file the applic
 JS features - Template literals, Arrow functions, functional loops (map/filter especially), node (process / argument), fs read/write the file system, modularization, npm and inquirer, object orientated programing, constructors etc, test driven development (?), promises (this stuff might be worth actually leaving for the next project unless I build these features!)
 Node -> Modularization -> NPM and Inquirer -> More JS with Node (?) (Maybe just the three, but add OOP and TDD later)
 Node process, argv -> modularization -> npm packages / inquirer -> more complex javascript? functional loops, iterators, template literals, etc. -> fs read/write (can i fit that into node or npm)
+Maybe Async JavaScript
 ## Installation
 ### Prerequisities
 Node - download. Version used. File browser, explorer, some way to explore the file system (vs code).
