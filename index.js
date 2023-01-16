@@ -1,27 +1,28 @@
-// Import packages required for the program to run.
-const inquirer = require("inquirer"); // Runs the prompts in the terminal.
-const fs = require("fs"); // Will be used to write README to the file system.
-const path = require("path"); // Will be used to create a new path to store the README file.
-const questions = require("./resources/questions"); // Contains questions.
-const generateMarkdown = require("./resources/generateMarkdown.js") // Program that writes markdown file based on user responses. 
+// Import packages to index.js.
+const inquirer = require("inquirer"); // Inquirer.
+const fs = require("fs"); // Node's file system module.
+const path = require("path"); // Directory path module.
 
-// Introduce the application in the console.
-console.log("\n Hello, Welcome to the Easy Read Me Generator!\n");
-console.log("The application will ask you a series of prompts.");
-console.log("It will generate a markdown README file based on your answers.\n");
+// Modularized questions and functions to keep index.js shorter.
+const questions = require("./resources/questions");
+const generateMarkdown = require("./resources/generateMarkdown.js");
 
-// Write a new file to the file system, containing data passed through as a parameter.
+// Write new file to the file system.
 function writeToFile(fileName, data) {
   fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
+// Prompt user with questions and user answers to generate markdown file.
 function begin() {
-  // Run through questions in terminal then return user input as an object.
-  inquirer.prompt(questions).then((answers) => { // Waits for question responses THEN passes the answers through a function. 
-      writeToFile("generated-readme/README.md", generateMarkdown({...answers})); // Generates read me file with answers, writes a markdown file to the path ./generated-readme/README.md.  
-      // Spread used for answers so that each time the program runs, the README file is written.
+  inquirer.prompt(questions).then((answers) => { // Async JavaScript. Following line must await Inquirer returning its promise. 
+      writeToFile("generated-readme/README.md", generateMarkdown({...answers})); // Spread awaits returned promise.
   })
 }
 
-// Initiate the program.
+// Client introduces itself to the user.
+console.log("\n Hello, Welcome to the Easy Read Me Generator!\n");
+console.log("The application will ask you a series of prompts.");
+console.log("It will generate a markdown README file based on your answers.\n");
+
+// Call of function to begin asking the user prompts.
 begin();
