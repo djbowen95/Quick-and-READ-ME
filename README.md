@@ -2,26 +2,53 @@
 <h2 align="center"> Command-Line README Generator. <i> Version 1.0 </i> </h2>
 <p><strong>Quick and READ ME!</strong> is an easy-to-use, command-line interface that helps a user to quickly create a professional README markdown file. Created in <em>Node.js</em> with the <em>Inquirer npm package</em>, it can be run on a local machine from the command line. It will invite a user to answer a series of question prompts about their current project, and generate a simple README file based on their input. The user is then free to copy across to their own project's repository. </p>
 
+
+## Table of Contents
+    
+* [01. About](#about)
+* * [01A. Project History](#project-history)
+* * [01B. Example Output](#example-output)
+* [02. Key Features](#key-features)
+* * [02A-E Key Feature A - E](#key-feature-a)
+* [03. Installation](#installation)
+* * [03A. Prerequisites](#prerequisities)
+* * [03B. Cloning the Repository](#cloning-the-repository)
+* * [03C. Running the Project Locally](#running-the-project-locally)
+* [04. Usage](#usage)
+* * [04A-E. Key Usage Features](#key-usage-a)
+* [05. Testing](#testing)
+* [06. Version History](#version-history)
+* [07. License](#license)
+* [08. Contribution](#contribution)
+* * [08A. Contribution Guidelines](#contribution-guidelines)
+* * [08B. Future Development](#future-development)
+* [09. Questions](#questions)
+
+## About
+### Project History
+### Demonstration Video
+### Example Output
 ## Demo Video and Sample
 The application can be seen in use here:  
 https://drive.google.com/file/d/1X9gVfdiT6SPgdSwwy0LVtYSUOOUI0eLx/view?usp=sharing
+[Should at least upload this to YouTube]
 
 A sample READ ME can be found at:
 ```
  ./generated-readme/README-sample.md
 ```
-    
-## Table of Contents
-    
-* [01. Installation](#installation)
-* [02. Usage](#usage)
-* [03. License](#license)
-* [04. Contribution](#contribution)
-* [05. Tests](#tests)
-* [06. Questions](#questions)
-* [07. Future Development](#development)
-    
+## Key Features
+### Key Feature A
+JS features - Template literals, Arrow functions, functional loops (map/filter especially), node (process / argument), fs read/write the file system, modularization, npm and inquirer, object orientated programing, constructors etc, test driven development (?), promises (this stuff might be worth actually leaving for the next project unless I build these features!)
+Node -> Modularization -> NPM and Inquirer -> More JS with Node (?) (Maybe just the three, but add OOP and TDD later)
+Node process, argv -> modularization -> npm packages / inquirer -> more complex javascript? functional loops, iterators, template literals, etc. -> fs read/write (can i fit that into node or npm)
 ## Installation
+### Prerequisities
+Node - download. Version used. File browser, explorer, some way to explore the file system (vs code).
+### Cloning the Repository
+Make sure you install the packages / inquirer - dependency. Version (older). 
+### Running the Project Locally
+npm start
 To install:  
 1.  Create a local clone of the most recent version of the repository from GitHub. This should store all the necessary files on your local machine.  
 2. Open the directory you have saved the repository in on your terminal.  
@@ -34,8 +61,9 @@ To install:
     mkdir generated-readme
 ```
 5. Finally, use the command 'node index.js' to run the program!
-
 ## Usage
+### Creating Your README File
+### Saving Your README File
 To use the program:  
 1. Begin the program by running the command 'node index.js' in your terminal, in the correct directory.  
 2. The terminal will now ask you a series of prompts: answer these in the level of detail you would like to be contained in your READ ME file.  
@@ -46,33 +74,33 @@ To use the program:
 ```
 5. Make a copy of your file or move it to the required location before running the application again. IMPORTANT: if you run the application again before copying or moving your READ ME file, the READ ME will be overwritten and your file will be lost. 
 
+Maybe screen shot each prompt.
+Saving your file as a section.
+You can always customise your file afterwards. 
+
+## Testing
+No tests - want to build - link to relevant project. 
+## Version History
+### Version 1.1.0
+Improved README (this READ ME).
+### Version 1.0.0
+As in the BootCamp - upload / link to brief here.
 ## License
-<img src="https://img.shields.io/badge/license-MIT-green.svg">  
-
-This project is licensed under MIT.
-    
+MIT. Link!
 ## Contribution
-Please contact me if you would like to contribute to this project.
+### Contribution Guidelines
+Want to say - please feel free to reach out; work on the issues for whatever I'm working on below, or break down tasks to explore some of my other ideas. Make a branch. Bootcamp Alumni. Want this to be easy to copy and paste directly when I write it. 
 
-## Tests
-There are currently no tests for this application.
+### Future Development
+Some of the ways I would like to build on this project in future:  
+1. Ask users which sections they would like to include in the READ ME - using the Inquirer checklist function. Currently working on this.
+2. Refactor this project and build tests - so that the application can be tested after installing! Will need to create classes/more complex application so this is a much bigger project, but will look at following weeks' project for inspiration.
+3. Give the user option to add additional sections (maybe in line with my current READ MEs) -> preferably build these as TDD style features (ie. 'version history' would be easy to make).
+4. Allow users to double check answers - ie. ask them 'does this all look correct' and 'what would you like to change' before creating the README file -> again, make this TDD!
+5. Include badges could also be fun -> license, version (and get the badge to find this out itself!).
+6. Include some styling -> title centred, badges featured.
+7. Save all READMEs with a unique name - so that they do not overwrite each other - and check to make sure that doesn't happen.
+8. Let program save user data such as contact info (name/github/linkedin/etc).
+9. Option that allows a user to go back into/parse a previously created README and edit it (possibly just add version history).
 
 ## Questions
-If you have any questions about this project, please contact me at:  
-Email: djbowen95@gmail.com  
-GitHub: [djbowen95](https://github.com/djbowen95)  
-
-## Development
-Some of the ways I would like to build on this project in future:  
-1. Use more prompts to generate a better / more descriptive description section.
-2. Ask user which of the following prompts they would like to include in the READ ME, using the inquirer checklist function. #KEY DEVELOPMENT 1
-3. Make the installation instructions and usage instructions a numbered list, either by asking the user to number instructions or asking them to input instructions one-by-one. (GUIDED - FREEHAND)
-4. Add a 'future development' set of prompts. 
-5. Function to double check answers - ie. "Does this all look correct?" "What would you like to change?" #KEY DEVELOPMENT 2
-6. Generate tests using TDD for this application. #KEY DEVELOPMENT 3 (this might be "2.0").
-
-7. Some support for version history
-8. Take an existing README and break it down
-9. Save all READMEs locally and create a custom path for where to save them
-9. Generate badges for the repository (automatically?)
-10. Let program user generate personal header or contact details section
