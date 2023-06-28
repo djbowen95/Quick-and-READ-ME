@@ -1,20 +1,20 @@
-// Import packages to index.js.
-const inquirer = require("inquirer"); // Inquirer.
-const fs = require("fs"); // Node's file system module.
-const path = require("path"); // Directory path module.
+// Import required packages.
+const inquirer = require("inquirer"); // Inquirer: for building a CLI.
+const fs = require("fs"); // fs (file system): read/write local files.
+const path = require("path"); // Path: utilities for file/directory paths. 
 
-// Modularized questions and functions to keep index.js shorter.
-const questions = require("./resources/questions");
-const generateMarkdown = require("./resources/generateMarkdown.js");
+// Modules, to keep index.js clean. 
+const questions = require("./resources/questions"); // Array of question prompts.
+const generateMarkdown = require("./resources/generateMarkdown.js"); // Functions to generate a markdown file, following a template.
 
 // Write new file to the file system.
 function writeToFile(fileName, data) {
   fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// Prompt user with questions and user answers to generate markdown file.
+// Prompt questions; generate markdown file with answers; store in 'generated-readme' directory.
 function begin() {
-  inquirer.prompt(questions).then((answers) => { // Async JavaScript. Following line must await Inquirer returning its promise. 
+  inquirer.prompt(questions).then((answers) => { // Async JavaScript; awaits promise from Inquirer as user answers prompts on the command line. 
       writeToFile("generated-readme/README.md", generateMarkdown({...answers})); // Spread awaits returned promise.
   })
 }
