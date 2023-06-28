@@ -2,11 +2,11 @@
 <h2 align="center"> Command-Line README Generator. <i> Version 1.0.1 </i> </h2>
 <p><strong>Quick and READ ME!</strong> is an easy-to-use command-line interface (CLI) that helps a user create a quick, professional README file in markdown format. It was created in <em><strong>Node.js</strong></em>, with the <em><strong>Inquirer</strong></em>, <em><strong>fs</strong></em> and <em><strong>path</strong></em> node packages, using <strong><em>JavaScript ES6+</em></strong> syntax features including modularization and asynchronous functions.
 
-This project was created for the <strong><a href="https://gist.github.com/djbowen95/2846640d520a16165b9b23db2d9e0926">University of Birmingham and 2U/Trilogy Education Web Development Coding Bootcamp</a></strong>, during Week 9 (Node.js and ES6+). To get started, I'd suggest you either:
+This project was created for the <strong><a href="https://gist.github.com/djbowen95/2846640d520a16165b9b23db2d9e0926">University of Birmingham and 2U/Trilogy Education Web Development Coding Bootcamp</a></strong>, during <strong>Week 9</strong> (Node.js and ES6+). To get started, I'd suggest you either:
  * Take a look at the [project history](#project-history) for a more detailed summary of what we were learning this week, or;
  * Take a look at the [technology stack](#technology-stack) to see how I used technologies that were new to me that week to solve a given brief.
 
-This was created as a portfolio project but if you'd like to use the application to generate your own READ ME files, please feel free! Take a look at the [installation instructions](#install) to get started. I also still have a few ideas for how I could improve this project, so if you are a junior developer interested in collaborating, please get in touch using [the contact details below](#contact).</p>
+This was created as a <strong><a href="https://github.com/djbowen95">portfolio project</a></strong>. If you'd like to use the application however, feel free! Take a look at the  [installation instructions](#install) to get started. I also still have a few ideas for how I could improve this project, so <strong>if you are a junior developer interested in collaborating</strong>, please get in touch using [the contact details below](#contact).</p>
 
 ### Table of Contents
 * [1. Project History](#project-history)
