@@ -15,7 +15,7 @@ function writeToFile(fileName, data) {
 // Prompt questions; generate markdown file with answers; store in 'generated-readme' directory.
 function begin() {
   inquirer.prompt(questions).then((answers) => { // Async JavaScript; awaits promise from Inquirer as user answers prompts on the command line. 
-      writeToFile("product/README.md", generateMarkdown({...answers})); // Spread awaits returned promise.
+      writeToFile("output/README.md", generateMarkdown({...answers})); // Spread awaits returned promise.
   })
 }
 
