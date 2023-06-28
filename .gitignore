@@ -1,15 +1,8 @@
-# Node modules - specifcally, files installed with inquirer
+# node modules
 node_modules/
 
-# Folder to contain all generated READ ME files - should be empty
-# Currently is required for program to run correctly - would like to change this.
-# generated-readme/
+# generated output
+output/README.md
 
-# Sandbox folder, used for storing notes and test files
+# sandbox for local files
 sandbox/
-
-# Project brief - description file that is not needed in the repo.
-homework-userstory.md
-
-# For now I don't want these pushed - but probably want repo to contain a blank folder for them
-generated-readme/
